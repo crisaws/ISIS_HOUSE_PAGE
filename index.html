@@ -22,6 +22,34 @@
               <li><a href="#">Contato</a></li>
       </ul>
       </nav>
+
+    <div class="faded_images" >
+      <img class="mySlides w3-animate-fading" src="My_images/jardim01.jpeg" id="banner"> 
+      <img class="mySlides w3-animate-fading" src="My_images/jardim02.jpeg" id="banner" >
+      <img class="mySlides w3-animate-fading" src="My_images/jardim03.jpeg" id="banner">
+    </div>
+    
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 6000);    
+    }
+    </script>
+    
+
+    <footer class="fixar-rodape">
+        <p>&copy; Tudo o que quiser colocar aqui</p>
+    </footer>
     
 </body>
 </html>
