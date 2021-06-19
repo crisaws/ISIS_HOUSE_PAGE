@@ -4,6 +4,15 @@ body {
     
 }
 
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-20px;
+    margin-top:80px;
+    background-color: aqua;
+    border-style: dashed
+}
+
 #imagelogos {
 	position: relative;
     max-width:250px;
@@ -70,7 +79,7 @@ body {
       width: 100%;
     }
 
-    #banner {
+    .mySlides{
         position: absolute;
         max-width:250px;
         max-height:250px;
@@ -80,4 +89,6 @@ body {
         top:50%;
         margin-left:-50px;
         margin-top:-50px;
-        }
+        border-radius: 15px;
+        border-radius: 15px;
+    }
